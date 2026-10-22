@@ -1,0 +1,69 @@
+\documentclass[10pt, letterpaper]{extarticle}
+
+\usepackage[top=0.25in, bottom=0.25in, left=0.5in, right=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{array}
+% ATS-safe text layer: real "fi/ff/ffi" letters (no ligature glyphs) and no hyphen-split words.
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf, ItalicFont=lmroman10-italic.otf, BoldItalicFont=lmroman10-bolditalic.otf, Ligatures={NoCommon,TeX}]
+
+\hypersetup{colorlinks=true, urlcolor=black}
+
+\titleformat{\section}{\small\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{2pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=3em
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \textbf{\small #1} \hfill \small #2 \\
+  \textit{\small #3} \hfill \textit{\small #4}
+}
+
+\begin{document}
+
+% Header (/job-setup fills this from your identity answers)
+\begin{center}
+  {\large\textbf{YOUR NAME}} \\[2pt]
+  \small +00-0000000000 \textbullet\ \href{mailto:you@example.com}{you@example.com} \textbullet\ \href{https://linkedin.com/in/you}{linkedin.com/in/you} \textbullet\ \href{https://github.com/you}{github.com/you} \textbullet\ City, Country
+\end{center}
+
+% Summary
+\section{Summary}
+\small One or two lines: your role, your strongest verified proof, one real number.
+
+% Skills
+\section{Skills}
+\small
+\textbf{Languages:} A, B, C \\
+\textbf{Frameworks:} D, E \\
+\textbf{Data \& Infra:} F, G \\
+\textbf{Tools:} H, I
+
+% Experience
+\section{Experience}
+\resumeSubheading{Company}{MM/YYYY -- Present}{Job Title}{City, Country}
+\begin{itemize}[leftmargin=*, nosep, topsep=1pt]
+  \resumeItem{Built X that did Y, measured as Z (a number that is true).}
+  \resumeItem{Second bullet.}
+\end{itemize}
+
+% Projects
+\section{Projects}
+\resumeSubheading{Project name}{Year}{Stack, Stack}{link}
+\begin{itemize}[leftmargin=*, nosep, topsep=1pt]
+  \resumeItem{What it does, one real detail or number.}
+\end{itemize}
+
+% Education
+\section{Education}
+\resumeSubheading{University}{MM/YYYY -- MM/YYYY}{Degree, Field}{GPA}
+
+\end{document}

@@ -1,0 +1,20 @@
+.DS_Store
+.playwright-mcp/
+node_modules/
+.claude/settings.local.json
+__pycache__/
+*.pyc
+.sync.log
+# LaTeX build junk
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+# Secrets: portal passwords etc. Never commit.
+.secrets/*
+!.secrets/.gitkeep
+# career-ops runtime state (per device)
+.claude/skills/career-ops/root/data/
+.claude/skills.bak.*

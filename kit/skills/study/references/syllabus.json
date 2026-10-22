@@ -1,0 +1,400 @@
+{
+  "_comment": "Study syllabus. Tracks > sections > items. DSA notes are one per section (the pattern); System Design and AI Engineering notes are one per item. Add items freely; run `study.py sync` afterwards. Never rename an existing item (its id is derived from track + item).",
+  "tracks": [
+    {
+      "name": "DSA",
+      "note_per": "section",
+      "sections": [
+        {
+          "name": "Arrays and Hashing",
+          "items": [
+            "Contains Duplicate",
+            "Valid Anagram",
+            "Two Sum",
+            "Group Anagrams",
+            "Top K Frequent Elements",
+            "Product of Array Except Self",
+            "Valid Sudoku",
+            "Encode and Decode Strings",
+            "Longest Consecutive Sequence"
+          ]
+        },
+        {
+          "name": "Two Pointers",
+          "items": [
+            "Valid Palindrome",
+            "Two Sum II",
+            "3Sum",
+            "Container With Most Water",
+            "Trapping Rain Water"
+          ]
+        },
+        {
+          "name": "Sliding Window",
+          "items": [
+            "Best Time to Buy and Sell Stock",
+            "Longest Substring Without Repeating Characters",
+            "Longest Repeating Character Replacement",
+            "Permutation in String",
+            "Minimum Window Substring",
+            "Sliding Window Maximum"
+          ]
+        },
+        {
+          "name": "Stack",
+          "items": [
+            "Valid Parentheses",
+            "Min Stack",
+            "Evaluate Reverse Polish Notation",
+            "Daily Temperatures",
+            "Car Fleet",
+            "Largest Rectangle in Histogram"
+          ]
+        },
+        {
+          "name": "Binary Search",
+          "items": [
+            "Binary Search",
+            "Search a 2D Matrix",
+            "Koko Eating Bananas",
+            "Find Minimum in Rotated Sorted Array",
+            "Search in Rotated Sorted Array",
+            "Time Based Key-Value Store",
+            "Median of Two Sorted Arrays"
+          ]
+        },
+        {
+          "name": "Linked List",
+          "items": [
+            "Reverse Linked List",
+            "Merge Two Sorted Lists",
+            "Reorder List",
+            "Remove Nth Node From End of List",
+            "Linked List Cycle",
+            "Add Two Numbers",
+            "LRU Cache",
+            "Merge K Sorted Lists"
+          ]
+        },
+        {
+          "name": "Trees",
+          "items": [
+            "Invert Binary Tree",
+            "Maximum Depth of Binary Tree",
+            "Diameter of Binary Tree",
+            "Balanced Binary Tree",
+            "Same Tree",
+            "Subtree of Another Tree",
+            "Lowest Common Ancestor of a BST",
+            "Binary Tree Level Order Traversal",
+            "Binary Tree Right Side View",
+            "Count Good Nodes in Binary Tree",
+            "Validate Binary Search Tree",
+            "Kth Smallest Element in a BST",
+            "Construct Binary Tree from Preorder and Inorder",
+            "Binary Tree Maximum Path Sum",
+            "Serialize and Deserialize Binary Tree"
+          ]
+        },
+        {
+          "name": "Tries",
+          "items": [
+            "Implement Trie",
+            "Design Add and Search Words",
+            "Word Search II"
+          ]
+        },
+        {
+          "name": "Heap and Priority Queue",
+          "items": [
+            "Kth Largest Element in a Stream",
+            "Last Stone Weight",
+            "K Closest Points to Origin",
+            "Task Scheduler",
+            "Find Median from Data Stream"
+          ]
+        },
+        {
+          "name": "Backtracking",
+          "items": [
+            "Subsets",
+            "Combination Sum",
+            "Permutations",
+            "Subsets II",
+            "Word Search",
+            "Palindrome Partitioning",
+            "N-Queens"
+          ]
+        },
+        {
+          "name": "Graphs",
+          "items": [
+            "Number of Islands",
+            "Clone Graph",
+            "Max Area of Island",
+            "Pacific Atlantic Water Flow",
+            "Surrounded Regions",
+            "Rotting Oranges",
+            "Course Schedule",
+            "Course Schedule II",
+            "Graph Valid Tree",
+            "Number of Connected Components",
+            "Redundant Connection",
+            "Word Ladder"
+          ]
+        },
+        {
+          "name": "Advanced Graphs",
+          "items": [
+            "Network Delay Time",
+            "Min Cost to Connect All Points",
+            "Cheapest Flights Within K Stops",
+            "Alien Dictionary"
+          ]
+        },
+        {
+          "name": "1-D Dynamic Programming",
+          "items": [
+            "Climbing Stairs",
+            "Min Cost Climbing Stairs",
+            "House Robber",
+            "House Robber II",
+            "Longest Palindromic Substring",
+            "Decode Ways",
+            "Coin Change",
+            "Maximum Product Subarray",
+            "Word Break",
+            "Longest Increasing Subsequence",
+            "Partition Equal Subset Sum"
+          ]
+        },
+        {
+          "name": "2-D Dynamic Programming",
+          "items": [
+            "Unique Paths",
+            "Longest Common Subsequence",
+            "Best Time to Buy and Sell Stock with Cooldown",
+            "Coin Change II",
+            "Target Sum",
+            "Edit Distance"
+          ]
+        },
+        {
+          "name": "Greedy",
+          "items": [
+            "Maximum Subarray",
+            "Jump Game",
+            "Jump Game II",
+            "Gas Station",
+            "Hand of Straights",
+            "Partition Labels"
+          ]
+        },
+        {
+          "name": "Intervals",
+          "items": [
+            "Insert Interval",
+            "Merge Intervals",
+            "Non-overlapping Intervals",
+            "Meeting Rooms II"
+          ]
+        },
+        {
+          "name": "Math and Bit Manipulation",
+          "items": [
+            "Rotate Image",
+            "Spiral Matrix",
+            "Set Matrix Zeroes",
+            "Single Number",
+            "Number of 1 Bits",
+            "Counting Bits",
+            "Missing Number",
+            "Sum of Two Integers"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "System Design",
+      "note_per": "item",
+      "sections": [
+        {
+          "name": "Fundamentals",
+          "items": [
+            "Back-of-the-Envelope Estimation",
+            "Scaling Vertical vs Horizontal",
+            "Load Balancing",
+            "Caching",
+            "CDN",
+            "SQL vs NoSQL",
+            "Database Indexing",
+            "Replication",
+            "Sharding and Partitioning",
+            "Consistent Hashing",
+            "CAP and Consistency Models",
+            "Transactions and Isolation Levels",
+            "Message Queues and Event-Driven Design",
+            "Idempotency and Exactly-Once",
+            "Rate Limiting Algorithms",
+            "API Design",
+            "WebSockets and Real-Time",
+            "Authentication and Authorization",
+            "Observability",
+            "Leader Election and Consensus",
+            "Monolith vs Microservices",
+            "Blob Storage",
+            "Search and Inverted Index"
+          ]
+        },
+        {
+          "name": "Case Studies",
+          "items": [
+            "Design a URL Shortener",
+            "Design a Rate Limiter",
+            "Design a Notification System",
+            "Design a Chat App",
+            "Design a News Feed",
+            "Design a Payment and Wallet System",
+            "Design a Distributed Job Scheduler",
+            "Design Typeahead Autocomplete",
+            "Design a Distributed Cache",
+            "Design File Storage",
+            "Design Video Streaming",
+            "Design Ride Hailing",
+            "Design Ticket Booking",
+            "Design a Web Crawler",
+            "Design a Leaderboard"
+          ]
+        },
+        {
+          "name": "Low-Level Design",
+          "items": [
+            "OOP and SOLID",
+            "Design Patterns",
+            "LLD Parking Lot",
+            "LLD LRU Cache",
+            "LLD Elevator",
+            "LLD Splitwise",
+            "LLD Rate Limiter"
+          ]
+        },
+        {
+          "name": "My Systems",
+          "items": [
+            "<My project> Architecture",
+            "<My employer system> Pipeline"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AI Engineering",
+      "note_per": "item",
+      "sections": [
+        {
+          "name": "Foundations",
+          "items": [
+            "How LLMs Work",
+            "Sampling Parameters",
+            "Context Windows",
+            "Embeddings",
+            "Tokens and Cost Math"
+          ]
+        },
+        {
+          "name": "Prompting and Outputs",
+          "items": [
+            "Prompt Engineering Patterns",
+            "Structured Outputs",
+            "Context Engineering"
+          ]
+        },
+        {
+          "name": "Agents",
+          "items": [
+            "Tool Calling",
+            "Agent Loops",
+            "Model Context Protocol",
+            "Multi-Agent Orchestration",
+            "Agent Memory",
+            "Agent Failure Modes"
+          ]
+        },
+        {
+          "name": "RAG",
+          "items": [
+            "RAG Pipeline",
+            "Chunking Strategies",
+            "Vector Databases and ANN",
+            "Hybrid Search",
+            "Reranking",
+            "RAG Evaluation"
+          ]
+        },
+        {
+          "name": "Evals and Quality",
+          "items": [
+            "Eval Design",
+            "LLM-as-Judge",
+            "Prompt Regression Testing",
+            "Reducing Hallucination",
+            "Guardrails"
+          ]
+        },
+        {
+          "name": "Production",
+          "items": [
+            "Latency Optimization",
+            "Cost Optimization",
+            "LLM Observability",
+            "Retries Fallbacks and Rate Limits",
+            "Prompt Injection and Security"
+          ]
+        },
+        {
+          "name": "Voice AI",
+          "items": [
+            "Voice Pipeline STT LLM TTS",
+            "VAD and Turn-Taking",
+            "Telephony SIP PSTN WebRTC"
+          ]
+        },
+        {
+          "name": "Models",
+          "items": [
+            "Fine-Tuning vs RAG vs Prompting",
+            "LoRA and PEFT",
+            "Serving Open Models"
+          ]
+        },
+        {
+          "name": "AI System Design",
+          "items": [
+            "Design a RAG Chatbot",
+            "Design a Voice Agent Platform",
+            "Design a Text-to-SQL Agent",
+            "Design an LLM Eval Pipeline",
+            "Design an LLM Gateway",
+            "Design Batch Transcript Analytics"
+          ]
+        },
+        {
+          "name": "My Stories",
+          "items": [
+            "Self-Refining Prompt Pipeline",
+            "MCP Token Reduction"
+          ]
+        },
+        {
+          "name": "Job prep: Forage AI",
+          "items": [
+            "Fine-tuning hands-on: LoRA/QLoRA with Hugging Face PEFT (Forage Junior AI)",
+            "Hugging Face Transformers + PyTorch basics: tokenizers, pipelines, a training loop (Forage Junior AI)",
+            "CrewAI vs LangGraph: multi-agent orchestration compared (Forage Junior AI)",
+            "LLM web data extraction: scraping, XPath generation, structured output (Forage Junior AI / SWE)"
+          ]
+        }
+      ]
+    }
+  ]
+}

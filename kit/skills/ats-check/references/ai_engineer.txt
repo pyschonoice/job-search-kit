@@ -1,0 +1,44 @@
+# AI Engineer ATS keywords (2026). Sources: resumeadapter, resumeatlas, levstack, atscvchecker.
+# tier | canonical | aliases...
+core | LLM | LLMs | Large Language Model | Large Language Models
+core | RAG | Retrieval-Augmented Generation
+core | AI Agents | AI agent | agentic | agents
+core | Multi-Agent | multi-agent orchestration | multi-agent pipelines
+core | Prompt Engineering
+core | Context Engineering
+core | Tool Calling | function calling | tool use
+core | MCP | Model Context Protocol
+core | Embeddings | embedding
+core | Vector Search | vector database | vector databases | semantic search
+core | LLM Evaluation | LLM evals | evals | model evaluation
+core | Python
+core | FastAPI
+core | Generative AI | GenAI
+core | OpenAI
+core | LangChain
+core | Inference | LLM inference | real-time inference
+core | Hallucination | hallucinations | grounding | guardrails
+core | Production | production-grade
+core | Cost | token reduction | inference cost
+nice | Gemini | Vertex AI
+nice | Anthropic | Claude API
+nice | Claude Code
+nice | LangGraph
+nice | LlamaIndex
+nice | LangSmith | Langfuse | Ragas | Braintrust
+nice | Structured Outputs | structured output | structured data
+nice | Fine-tuning | fine tuning | LoRA
+nice | Hugging Face | HuggingFace
+nice | PyTorch
+nice | NLP | natural language processing
+nice | OCR | document intelligence
+nice | pgvector | Pinecone | Weaviate | Qdrant | Chroma | TiDB
+nice | Text-to-SQL | text to SQL
+nice | Voice AI | voice agents | speech-to-text | STT | TTS
+nice | Latency
+nice | Observability
+nice | Docker
+nice | Kubernetes
+nice | AWS | Bedrock
+nice | GCP | Google Cloud
+nice | CI/CD

@@ -1,0 +1,428 @@
+# career-ops scanner config for the user (read by tools/career-ops/scan.mjs via CAREER_OPS_ROOT).
+# Filters mirror .claude/skills/job-hunt/references/search.json (title_include / title_exclude / location_ok).
+# Add a company: one tracked_companies entry with its ATS careers_url (Greenhouse, Ashby, Lever, Workable,
+# Rippling, SmartRecruiters, Workday, Zoho Recruit, Recruitee, BambooHR, Breezy... see
+# tools/career-ops/templates/portals.example.yml "Provider auto-detection"). Keka and Darwinbox are not supported.
+
+scan_history:
+  recheck_after_days: 7
+
+max_posting_age_days: 30
+
+title_filter:
+  positive:
+    - "ai engineer"
+    - "genai"
+    - "gen ai"
+    - "generative ai"
+    - "llm"
+    - "ml engineer"
+    - "machine learning engineer"
+    - "applied ai"
+    - "agent"
+    - "backend"
+    - "back end"
+    - "back-end"
+    - "software engineer"
+    - "software developer"
+    - "sde"
+    - "full stack"
+    - "fullstack"
+    - "full-stack"
+    - "python"
+    - "node"
+    - "forward deployed"
+    - "founding engineer"
+    - "platform engineer"
+    - "solutions engineer"
+    - "member of technical staff"
+    - "product engineer"
+  negative:
+    - "senior"
+    - "sr."
+    - "sr"
+    - "staff"
+    - "principal"
+    - "lead"
+    - "manager"
+    - "director"
+    - "head of"
+    - "architect"
+    - "vp"
+    - "intern"
+    - "trainee"
+    - "frontend"
+    - "front end"
+    - "front-end"
+    - "android"
+    - "ios"
+    - "java developer"
+    - ".net"
+    - "dotnet"
+    - "sap"
+    - "salesforce"
+    - "mainframe"
+    - "qa"
+    - "test engineer"
+    - "sdet"
+    - "data analyst"
+    - "account executive"
+    - "sales"
+    - "marketing"
+    - "recruiter"
+    - "designer"
+    - "support engineer"
+    - "embedded"
+    - "firmware"
+    - "devops"
+    - "sre"
+    - "network"
+    - "security analyst"
+    - "iii"
+    - "sde 3"
+    - "sde-3"
+    - "sde iii"
+    - "java backend"
+    - "java engineer"
+    - "golang"
+    - "go developer"
+    - "php"
+    - "ruby"
+    - "c++"
+
+location_filter:
+  always_allow: ["India", "<your city>", "<your city>"]
+  block: ["Thailand", "Colombia", "Argentina", "Chile", "Peru", "Taiwan", "New Zealand", "South Africa", "Nigeria", "Kenya", "Egypt", "UAE", "Dubai", "Saudi", "Italy", "Romania", "Czech", "Hungary", "Denmark", "Norway", "Finland", "Belgium", "Hong Kong", "Sweden", "Korea", "China", "Indonesia", "Switzerland", "Austria", "Portugal", "Japan", "Vietnam", "Malaysia", "Netherlands", "France", "Ireland", "Israel", "US-", "United States", "USA", "Canada", "United Kingdom", "Europe", "EMEA", "LATAM", "Americas", "Germany", "Brazil", "Mexico", "Australia", "Singapore", "Philippines", "Poland", "Spain"]
+  allow: ["<your city>", "<your city>", "India", "Remote", "Anywhere", "Worldwide", "Global"]
+
+tracked_companies:
+  - name: "Sarvam AI"
+    careers_url: https://jobs.ashbyhq.com/sarvam
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Composio"
+    careers_url: https://jobs.ashbyhq.com/composio
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Atlan"
+    careers_url: https://jobs.ashbyhq.com/atlan
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Smallest.ai"
+    careers_url: https://jobs.ashbyhq.com/smallest
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Bolna"
+    careers_url: https://jobs.ashbyhq.com/bolna
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "TrueFoundry"
+    careers_url: https://job-boards.greenhouse.io/truefoundry
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Nurix AI"
+    careers_url: https://job-boards.greenhouse.io/nurix
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Groww"
+    careers_url: https://job-boards.greenhouse.io/groww
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "slice"
+    careers_url: https://job-boards.greenhouse.io/slice
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Razorpay"
+    careers_url: https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "CRED"
+    careers_url: https://jobs.lever.co/cred
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Meesho"
+    careers_url: https://jobs.lever.co/meesho
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Zeta"
+    careers_url: https://jobs.lever.co/zeta
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Fi Money"
+    careers_url: https://jobs.lever.co/fi
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Gushwork"
+    careers_url: https://jobs.lever.co/gushwork
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Epifi"
+    careers_url: https://jobs.lever.co/epifi
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Get Well Network"
+    careers_url: https://job-boards.greenhouse.io/getwellnetwork
+    notes: "job-hunt search.json watchlist"
+    enabled: true
+
+  - name: "Seekho"
+    careers_url: https://apply.workable.com/seekho
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Arabelle Solutions"
+    careers_url: https://arabellesolutions.wd3.myworkdayjobs.com/Arabelle_Solutions
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Alaan"
+    careers_url: https://ats.rippling.com/alaan-careers/jobs
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Different"
+    careers_url: https://ats.rippling.com/differentai/jobs
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Rippling"
+    careers_url: https://ats.rippling.com/rippling/jobs
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Tilda Research"
+    careers_url: https://ats.rippling.com/tilda-research-inc/jobs
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Barclays"
+    careers_url: https://barclays.wd3.myworkdayjobs.com/External_Career_Site_Barclays
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "BlackLine"
+    careers_url: https://blackline.wd108.myworkdayjobs.com/BlackLineCareers
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Cisco"
+    careers_url: https://cisco.wd5.myworkdayjobs.com/Cisco_Careers
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "IFCCI"
+    careers_url: https://ifcci.zohorecruit.in/jobs/Careers
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "AI Squared"
+    careers_url: https://job-boards.greenhouse.io/aisquared
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Cleo (India)"
+    careers_url: https://job-boards.greenhouse.io/cleoindia
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "GitLab"
+    careers_url: https://job-boards.greenhouse.io/gitlab
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "InMobi"
+    careers_url: https://job-boards.greenhouse.io/inmobi
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Rubrik"
+    careers_url: https://job-boards.greenhouse.io/rubrik
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "SingleStore"
+    careers_url: https://job-boards.greenhouse.io/singlestore
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Telnyx"
+    careers_url: https://job-boards.greenhouse.io/telnyx54
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "G2"
+    careers_url: https://jobs.ashbyhq.com/G2
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Meraki Labs"
+    careers_url: https://jobs.ashbyhq.com/Meraki-Labs
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "WisdomAI"
+    careers_url: https://jobs.ashbyhq.com/Wisdom-AI
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "AiPrise"
+    careers_url: https://jobs.ashbyhq.com/aiprise
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "BJAK"
+    careers_url: https://jobs.ashbyhq.com/bjakcareer
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Kognitos"
+    careers_url: https://jobs.ashbyhq.com/kognitos
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Korza"
+    careers_url: https://jobs.ashbyhq.com/korza
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "OpenAI"
+    careers_url: https://jobs.ashbyhq.com/openai
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Oscilar"
+    careers_url: https://jobs.ashbyhq.com/oscilar
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Rifa"
+    careers_url: https://jobs.ashbyhq.com/rifa
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Drivetrain"
+    careers_url: https://jobs.lever.co/drivetrain
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Hevo Data"
+    careers_url: https://jobs.lever.co/hevodata
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Omnidian"
+    careers_url: https://jobs.lever.co/omnidian
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Safe Security"
+    careers_url: https://jobs.lever.co/safe
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Maersk"
+    careers_url: https://maersk.wd3.myworkdayjobs.com/Maersk_Careers
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Maersk"
+    careers_url: https://maersk.wd3.myworkdayjobs.com/Maersk_Manual
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "PwC"
+    careers_url: https://pwc.wd3.myworkdayjobs.com/CRM_Experienced_Careers_Site/job
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Synechron"
+    careers_url: https://synechron.wd1.myworkdayjobs.com/SynechronCareers
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Synthlane"
+    careers_url: https://synthlane.zohorecruit.in/jobs/Careers
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Thoucentric"
+    careers_url: https://thoucentric.zohorecruit.in/jobs/Careers
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Trellix"
+    careers_url: https://trellix.wd1.myworkdayjobs.com/EnterpriseCareers
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Twenty20 Systems"
+    careers_url: https://twenty20sys.zohorecruit.com/jobs/Careers
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Wissen Technology"
+    careers_url: https://wissen.zohorecruit.in/jobs/Careers
+    notes: "from tracker/hunts (already applied or seen)"
+    enabled: true
+
+  - name: "Databricks"
+    careers_url: https://job-boards.greenhouse.io/databricks
+    notes: "added 2026-10-21, unverified: prune if the scan reports it failing"
+    enabled: true
+
+  - name: "Stripe"
+    careers_url: https://job-boards.greenhouse.io/stripe
+    notes: "added 2026-10-21, unverified: prune if the scan reports it failing"
+    enabled: true
+
+  - name: "Cloudflare"
+    careers_url: https://job-boards.greenhouse.io/cloudflare
+    notes: "added 2026-10-21, unverified: prune if the scan reports it failing"
+    enabled: true
+
+  - name: "Twilio"
+    careers_url: https://job-boards.greenhouse.io/twilio
+    notes: "added 2026-10-21, unverified: prune if the scan reports it failing"
+    enabled: true
+
+  - name: "MongoDB"
+    careers_url: https://job-boards.greenhouse.io/mongodb
+    notes: "added 2026-10-21, unverified: prune if the scan reports it failing"
+    enabled: true
+
+  - name: "ElevenLabs"
+    careers_url: https://jobs.ashbyhq.com/elevenlabs
+    notes: "added 2026-10-21, unverified: prune if the scan reports it failing"
+    enabled: true
+
+  - name: "Cohere"
+    careers_url: https://jobs.ashbyhq.com/cohere
+    notes: "added 2026-10-21, unverified: prune if the scan reports it failing"
+    enabled: true
+
+  - name: "Deel"
+    careers_url: https://jobs.ashbyhq.com/deel
+    notes: "added 2026-10-21, unverified: prune if the scan reports it failing"
+    enabled: true
+
+  - name: "Glean"
+    careers_url: https://job-boards.greenhouse.io/gleanwork
+    notes: "added 2026-10-21, unverified: prune if the scan reports it failing"
+    enabled: true
+

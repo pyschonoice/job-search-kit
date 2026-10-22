@@ -1,0 +1,146 @@
+<!doctype html>
+<!--
+  LinkedIn image card, 1080x1350 (or 1080x1080). Render with scripts/render.sh.
+  Set ONE layout class on <body>: diagram | code | statement | checklist | frame
+  Add "light" to <body> for a light card (e.g. when wrapping a dark screenshot).
+  Rules: body text >= 34px, titles >= 64px, at most ~40 words per card, accent on the kicker plus ONE highlight (an <em> or the .metric).
+  Every word and number on a card must be verified in my-profile; the sample below follows that.
+  Snippets for each layout are at the bottom of this file.
+-->
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=general-sans@400,500,600&display=block">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=block">
+<style>
+  :root {
+    --bg: oklch(0.17 0.012 260);
+    --surface: oklch(0.23 0.014 260);
+    --line: oklch(0.34 0.015 260);
+    --text: oklch(0.96 0.008 90);
+    --muted: oklch(0.72 0.018 260);
+    --accent: oklch(0.82 0.15 75);      /* amber: one use per card */
+    --accent-ink: oklch(0.22 0.04 75);
+    --ok: oklch(0.80 0.14 155);
+    --bad: oklch(0.72 0.16 25);
+    --display: "Cabinet Grotesk", "Avenir Next", "Helvetica Neue", sans-serif;
+    --sans: "General Sans", "Avenir Next", "Helvetica Neue", sans-serif;
+    --mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+  }
+  body.light {
+    --bg: oklch(0.97 0.006 90); --surface: oklch(1 0 0); --line: oklch(0.86 0.01 260);
+    --text: oklch(0.20 0.015 260); --muted: oklch(0.45 0.02 260);
+    --accent: oklch(0.62 0.16 60); --accent-ink: oklch(0.99 0.01 90);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 100vw; height: 100vh; }
+  body {
+    background: var(--bg); color: var(--text); font-family: var(--sans);
+    font-size: 36px; line-height: 1.35; -webkit-font-smoothing: antialiased;
+    display: flex; flex-direction: column; padding: 96px 88px 72px; overflow: hidden;
+    font-feature-settings: "tnum";
+  }
+
+  .kicker { font: 600 26px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 28px; }
+  h1 { font: 800 76px/1.02 var(--display); letter-spacing: -.02em; text-wrap: balance; }
+  h1 em { font-style: normal; color: var(--accent); }
+  .sub { margin-top: 24px; color: var(--muted); font-size: 36px; text-wrap: pretty; max-width: 26ch; }
+  main { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 28px; margin: 56px 0; }
+
+  footer { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; border-top: 2px solid var(--line); font-size: 26px; color: var(--muted); }
+  footer b { color: var(--text); font-weight: 600; }
+
+  /* diagram: a vertical flow of boxes; add .row for side-by-side */
+  .flow { display: flex; flex-direction: column; gap: 14px; }
+  .row { display: flex; gap: 20px; }
+  .row > .box { flex: 1; }
+  .box { background: var(--surface); border: 2px solid var(--line); border-radius: 20px; padding: 26px 30px; }
+  .box h3 { font: 700 38px/1.1 var(--display); }
+  .box p { color: var(--muted); font-size: 30px; margin-top: 6px; }
+  .box.hot { border-color: var(--accent); }
+  .box.bad { border-color: var(--bad); } .box.good { border-color: var(--ok); }
+  .arrow { align-self: center; font: 600 34px/1 var(--mono); color: var(--muted); }
+  .arrow b { color: var(--accent); font-weight: 600; }
+  .metric { font: 800 120px/1 var(--display); color: var(--accent); letter-spacing: -.03em; }
+
+  /* code */
+  pre { background: var(--surface); border: 2px solid var(--line); border-radius: 20px; padding: 36px 36px; font: 400 28px/1.5 var(--mono); white-space: pre-wrap; }
+  pre .c { color: var(--muted); } pre .k { color: var(--accent); } pre .s { color: var(--ok); }
+  pre mark { background: color-mix(in oklch, var(--accent) 22%, transparent); color: inherit; border-radius: 6px; padding: 0 4px; }
+
+  /* statement */
+  body.statement main { justify-content: center; }
+  body.statement .quote { font: 800 92px/1.04 var(--display); letter-spacing: -.025em; text-wrap: balance; }
+  body.statement .quote em { font-style: normal; color: var(--accent); }
+
+  /* checklist */
+  ol.check { list-style: none; counter-reset: i; display: flex; flex-direction: column; gap: 22px; }
+  ol.check li { counter-increment: i; display: grid; grid-template-columns: 72px 1fr; gap: 18px; align-items: start; }
+  ol.check li::before { content: counter(i, decimal-leading-zero); font: 600 30px/1.4 var(--mono); color: var(--accent); }
+  ol.check li span { color: var(--muted); display: block; font-size: 29px; }
+
+  /* frame: a screenshot on a padded surface */
+  .shot { border-radius: 22px; overflow: hidden; border: 2px solid var(--line); box-shadow: 0 30px 80px -20px oklch(0 0 0 / .45); }
+  .shot img { display: block; width: 100%; height: auto; }
+  .caption { color: var(--muted); font-size: 30px; }
+</style>
+</head>
+
+<body class="diagram">
+  <div class="kicker">Topic · subtopic</div>
+  <h1>The service needed a few fields. It was getting the whole response.</h1>
+
+  <main>
+    <div class="flow">
+      <div class="box bad"><h3>Before</h3><p>Full JSON response → every call</p></div>
+      <div class="arrow">↓ <b>A field filter</b></div>
+      <div class="box good"><h3>After</h3><p>Only the fields requested</p></div>
+    </div>
+    <div class="metric">−X%</div>
+    <p class="caption">payload size per call</p>
+  </main>
+
+  <footer><span><b>Your Name</b> · Your Title</span><span>in/your-handle</span></footer>
+</body>
+</html>
+
+<!--
+=== code ===
+<body class="code">
+  <div class="kicker">Backend · idempotency</div>
+  <h1>One job ID that makes a <em>double payout</em> impossible</h1>
+  <main>
+<pre><span class="c">// retries reuse the same id, so the queue drops the duplicate</span>
+<span class="k">await</span> queue.add(<span class="s">"prize"</span>, data, {
+  jobId: <mark>`prize-${tournamentId}-${userId}-${place}`</mark>,
+});</pre>
+  </main>
+  <footer>…</footer>
+</body>
+
+=== statement ===
+<body class="statement">
+  <div class="kicker">Opinion</div>
+  <main><p class="quote">The model was the <em>easy part</em>.</p></main>
+  <footer>…</footer>
+</body>
+
+=== checklist ===
+<body class="checklist">
+  <div class="kicker">Checklist</div>
+  <h1>Before a change hits production</h1>
+  <main><ol class="check">
+    <li><div>Re-run the golden cases<span>Same inputs, compare outcomes</span></div></li>
+    <li><div>Score against the checks<span>Agreed pass/fail criteria</span></div></li>
+  </ol></main>
+  <footer>…</footer>
+</body>
+
+=== frame === (copy the screenshot next to the html as shot.png)
+<body class="frame light">
+  <div class="kicker">Building in public</div>
+  <h1>Know the cost <em>before</em> you run it</h1>
+  <main><div class="shot"><img src="shot.png" alt=""></div><p class="caption">Dry-run estimate before the real run</p></main>
+  <footer>…</footer>
+</body>
+-->

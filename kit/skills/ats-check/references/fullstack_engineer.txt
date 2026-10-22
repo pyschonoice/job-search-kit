@@ -1,0 +1,33 @@
+# Full Stack Engineer (backend-heavy) ATS keywords (2026). Use together with backend_engineer.txt.
+# Sources: resumeatlas, resumeadapter, aiapplyd (full stack / SWE lists).
+# tier | canonical | aliases...
+core | Full Stack | full-stack | fullstack
+core | React | React.js | ReactJS
+core | Next.js | NextJS
+core | TypeScript
+core | JavaScript
+core | Node.js | NodeJS
+core | REST APIs | REST | RESTful
+core | PostgreSQL | Postgres
+core | HTML | HTML5
+core | CSS | Tailwind CSS | Tailwind
+core | Responsive Design | responsive
+core | State Management | Zustand | Redux | TanStack Query
+core | Testing | Vitest | Jest | pytest | unit tests
+core | Docker
+core | CI/CD
+core | Authentication | auth | OAuth | JWT | Clerk
+nice | Vite
+nice | shadcn/ui | shadcn | Radix
+nice | Zod
+nice | Server-Side Rendering | SSR | App Router
+nice | WebSockets | WebSocket
+nice | GraphQL
+nice | Accessibility | a11y
+nice | Performance | Core Web Vitals | SEO
+nice | Vercel
+nice | MongoDB
+nice | Express
+nice | Prisma | ORM
+nice | AWS
+nice | Payments | wallet | ledger

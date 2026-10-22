@@ -1,0 +1,20 @@
+{
+  "_note": "Mirror of fill-form/references/answers.md for scripts. Update both together. /job-setup writes this file; every value below is a placeholder until then.",
+  "first": "", "last": "", "full": "",
+  "email": "", "phone10": "", "phone_intl": "", "country_code": "",
+  "linkedin": "", "github": "",
+  "address": {"line1": "", "line2": "", "city": "", "state": "", "pin": "", "country": ""},
+  "dob": {"dd": "", "mm": "", "yyyy": ""},
+  "gender": "",
+  "current_employer": "", "current_title": "",
+  "exp": {"years": 0, "months": 0, "decimal": "", "whole_years": 0, "excl_internships": ""},
+  "ctc": {"current_lpa": 0, "current_rupees": 0, "expected_lpa": 0, "expected_rupees": 0, "breakup": ""},
+  "notice_days": 0, "notice_text": "", "serving_notice": false,
+  "resumes": {"primary": "/absolute/path/to/main_resume/<variant>/<File>.pdf"},
+  "education": {"degree": "", "degree_short": "", "field": "", "field_workday": "", "college": "", "from": "", "to": "", "from_mm": "", "to_mm": "", "gpa": ""},
+  "jobs": [
+    {"title": "", "company": "", "location": "", "current": true, "from_mm": "", "from_yyyy": "", "desc": ""}
+  ],
+  "languages": [{"name": "English", "level5": "5 - Fluent"}],
+  "start_date_rule": "today + <notice days> days"
+}

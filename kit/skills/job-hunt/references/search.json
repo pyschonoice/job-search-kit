@@ -1,0 +1,224 @@
+{
+  "_comment": "Config for scripts/hunt.py. Edit freely: add boards to `boards` when you find a company on Greenhouse, Lever or Ashby (probe with the URLs in references/sources.md).",
+  "linkedin_queries": [
+    "Back End Developer",
+    "Software Engineer",
+    "Artificial Intelligence Engineer",
+    "GenAI Engineer",
+    "LLM Engineer",
+    "Backend Engineer Python",
+    "SDE",
+    "Forward Deployed Engineer",
+    "Full Stack Engineer"
+  ],
+  "linkedin_locations": [
+    {
+      "label": "<your city>",
+      "geoId": "105214831"
+    },
+    {
+      "label": "India",
+      "geoId": "102713980"
+    }
+  ],
+  "_linkedin_note": "Mirrors the user's LinkedIn preference search (geoId 105214831 = Bengaluru; look up your own geoId). geo entries: {label, geoId}. f_E: 2 entry, 3 associate, 4 mid-senior.",
+  "linkedin_experience": "2,3,4",
+  "title_include": [
+    "ai engineer",
+    "genai",
+    "gen ai",
+    "generative ai",
+    "llm",
+    "ml engineer",
+    "machine learning engineer",
+    "applied ai",
+    "agent",
+    "backend",
+    "back end",
+    "back-end",
+    "software engineer",
+    "software developer",
+    "sde",
+    "full stack",
+    "fullstack",
+    "full-stack",
+    "python",
+    "node",
+    "forward deployed",
+    "founding engineer",
+    "platform engineer",
+    "solutions engineer",
+    "member of technical staff",
+    "product engineer"
+  ],
+  "title_exclude": [
+    "senior",
+    "sr.",
+    "sr ",
+    "staff",
+    "principal",
+    "lead",
+    "manager",
+    "director",
+    "head of",
+    "architect",
+    "vp ",
+    "intern",
+    "trainee",
+    "frontend",
+    "front end",
+    "front-end",
+    "android",
+    "ios",
+    "java developer",
+    ".net",
+    "dotnet",
+    "sap",
+    "salesforce",
+    "mainframe",
+    "qa ",
+    "test engineer",
+    "sdet",
+    "data analyst",
+    "account executive",
+    "sales",
+    "marketing",
+    "recruiter",
+    "designer",
+    "support engineer",
+    "embedded",
+    "firmware",
+    "devops",
+    "sre",
+    "network",
+    "security analyst",
+    "iii",
+    "sde 3",
+    "sde-3",
+    "sde iii",
+    "java backend",
+    "java engineer",
+    "golang",
+    "go developer",
+    "php",
+    "ruby",
+    "c++"
+  ],
+  "location_ok": [
+    "bengaluru",
+    "bangalore",
+    "remote",
+    "india",
+    "anywhere",
+    "worldwide",
+    "global"
+  ],
+  "max_min_years": 3,
+  "boards": [
+    {
+      "company": "Sarvam AI",
+      "ats": "ashby",
+      "slug": "sarvam"
+    },
+    {
+      "company": "Composio",
+      "ats": "ashby",
+      "slug": "composio"
+    },
+    {
+      "company": "Atlan",
+      "ats": "ashby",
+      "slug": "atlan"
+    },
+    {
+      "company": "Smallest.ai",
+      "ats": "ashby",
+      "slug": "smallest"
+    },
+    {
+      "company": "Bolna",
+      "ats": "ashby",
+      "slug": "bolna"
+    },
+    {
+      "company": "TrueFoundry",
+      "ats": "greenhouse",
+      "slug": "truefoundry"
+    },
+    {
+      "company": "Nurix AI",
+      "ats": "greenhouse",
+      "slug": "nurix"
+    },
+    {
+      "company": "Groww",
+      "ats": "greenhouse",
+      "slug": "groww"
+    },
+    {
+      "company": "slice",
+      "ats": "greenhouse",
+      "slug": "slice"
+    },
+    {
+      "company": "Razorpay",
+      "ats": "greenhouse",
+      "slug": "razorpaysoftwareprivatelimited"
+    },
+    {
+      "company": "CRED",
+      "ats": "lever",
+      "slug": "cred"
+    },
+    {
+      "company": "Meesho",
+      "ats": "lever",
+      "slug": "meesho"
+    },
+    {
+      "company": "Zeta",
+      "ats": "lever",
+      "slug": "zeta"
+    },
+    {
+      "company": "Fi Money",
+      "ats": "lever",
+      "slug": "fi"
+    },
+    {
+      "company": "Gushwork",
+      "ats": "lever",
+      "slug": "gushwork"
+    },
+    {
+      "company": "Epifi",
+      "ats": "lever",
+      "slug": "epifi"
+    },
+    {
+      "company": "Get Well Network",
+      "ats": "greenhouse",
+      "slug": "getwellnetwork"
+    }
+  ],
+  "saved_search": "",
+  "_freehire_note": "freehire.me public API (no key). Each query is one /agent/jobs/search call; geography params OR together, so <your city> and remote-India are separate queries. skip_sources drops big-company feeds that are mostly senior or Java.",
+  "freehire": {
+    "queries": [
+      {
+        "cities": "<your city>"
+      },
+      {
+        "countries": "IN",
+        "work_mode": "remote"
+      }
+    ],
+    "category": "backend,ai_engineering,ml_ai,fullstack,software_engineering",
+    "seniority_exclude": "senior,lead,staff,principal,c_level",
+    "skip_sources": [
+      "ibm",
+      "oracle"
+    ],
+    "max_pages": 3
+  }
+}

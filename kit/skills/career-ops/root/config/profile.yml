@@ -1,0 +1,5 @@
+# Minimal career-ops profile: only what the zero-token scripts read.
+# The user's real profile lives in the my-profile skill; don't duplicate it here.
+location:
+  country: "<your country>"
+  city: "<your city>"

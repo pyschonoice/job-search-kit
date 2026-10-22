@@ -1,0 +1,48 @@
+# Backend Engineer ATS keywords (2026). Sources: resumeatlas, resumeadapter, aiapplyd, dev.to.
+# tier | canonical | aliases...
+core | Python
+core | Node.js | NodeJS
+core | TypeScript
+core | REST APIs | REST | RESTful | REST API
+core | API Design
+core | Microservices | microservice
+core | Distributed Systems | distributed processing
+core | System Design
+core | PostgreSQL | Postgres
+core | SQL
+core | Redis
+core | Docker
+core | CI/CD
+core | Scalability | scalable | high-throughput
+core | Message Queues | BullMQ | Kafka | RabbitMQ | queues
+core | Async | asynchronous | AsyncIO | async
+core | Testing | pytest | unit tests | Vitest | Jest
+core | Authentication | OAuth | JWT | auth
+core | RBAC | role-based access control
+core | Database Design | schema design | data modeling | schema
+nice | FastAPI
+nice | Express
+nice | Django | Django REST Framework
+nice | ORM | Prisma | SQLAlchemy | Drizzle
+nice | Transactions | transactional
+nice | Idempotency | idempotent
+nice | Rate Limiting | rate limiter
+nice | Caching | cache
+nice | Event-Driven | event driven
+nice | WebSockets | WebSocket
+nice | Background Workers | background worker | workers
+nice | Multi-tenant | multi-tenancy
+nice | MongoDB
+nice | GraphQL
+nice | gRPC
+nice | Kubernetes | K8s
+nice | AWS
+nice | GCP | Google Cloud
+nice | GitHub Actions
+nice | Observability | monitoring | logging | Prometheus | Grafana
+nice | Latency | p99 | p95
+nice | Linux
+nice | Git
+nice | Java
+nice | Go | Golang
+nice | Security | secure
